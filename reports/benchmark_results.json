@@ -1,7 +1,7 @@
 {
   "project_name": "skybrisk-telco-churn-analytics",
   "version": "1.0.0",
-  "execution_time_sec": 156.69,
+  "execution_time_sec": 303.71,
   "raw_data_immutability_verified": true,
   "raw_data_sha256": "464b6c05f38321d811a826c8da73f24976a963f3de0b4dda653994af3d2b88fd",
   "validation_report": {
@@ -42,8 +42,8 @@
       "Statistic": 1843.8065966570482,
       "p_value": 0.0,
       "Effect_Size": 0.5116569032954718,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -75,8 +75,8 @@
       "Statistic": 1078.619156437997,
       "p_value": 6.0370690322098264e-235,
       "Effect_Size": 0.3913408828111628,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -86,8 +86,8 @@
       "Statistic": 772.2152818537032,
       "p_value": 2.0681504307609608e-168,
       "Effect_Size": 0.3311237651856954,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -97,8 +97,8 @@
       "Statistic": 728.9828634486042,
       "p_value": 5.05105969441052e-159,
       "Effect_Size": 0.32172130038687025,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -106,10 +106,10 @@
       "Type": "Categorical",
       "Test": "Chi-Square",
       "Statistic": 353.42048316826606,
-      "p_value": 2.7103586483418277e-76,
+      "p_value": 2.710358648341828e-76,
       "Effect_Size": 0.2240097977513662,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -119,8 +119,8 @@
       "Statistic": 96.89073508426469,
       "p_value": 7.32606874702833e-23,
       "Effect_Size": 0.11729034971895617,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": true
     },
     {
@@ -130,8 +130,8 @@
       "Statistic": 9.68225860847064,
       "p_value": 0.001860557763191877,
       "Effect_Size": 0.037077419010669806,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": false
     },
     {
@@ -141,8 +141,8 @@
       "Statistic": 8.0747562826019,
       "p_value": 0.0044886143880494426,
       "Effect_Size": 0.0338599152949311,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": false
     },
     {
@@ -152,8 +152,8 @@
       "Statistic": 6.824154433186246,
       "p_value": 0.008993312393646152,
       "Effect_Size": 0.031127595847202604,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": false
     },
     {
@@ -163,13 +163,13 @@
       "Statistic": 0.5405486642379704,
       "p_value": 0.46220543113147694,
       "Effect_Size": 0.008760694883721163,
-      "Retained_Mean": NaN,
-      "Churned_Mean": NaN,
+      "Retained_Mean": null,
+      "Churned_Mean": null,
       "Significant_at_0.001": false
     }
   ],
   "best_model": "Proposed Hybrid Soft-Voting Ensemble (GBM+RF+LR)",
-  "optimal_threshold": 0.6504680620838822,
+  "optimal_threshold": 0.650468062085799,
   "model_benchmarks": [
     {
       "Model": "Proposed Hybrid Soft-Voting Ensemble (GBM+RF+LR)",
@@ -191,10 +191,10 @@
       "Test_F1_Score": 0.8068331143232589,
       "Test_ROC_AUC": 0.952036993980728,
       "Test_PR_AUC": 0.8872050507191911,
-      "Test_Brier_Score": 0.0851210526975777,
-      "Decision_Threshold": 0.6504680620838822,
-      "Train_Time_Sec": 5.6657974199997625,
-      "Inference_Latency_ms_per_row": 0.021801957416502583,
+      "Test_Brier_Score": 0.08512105269776267,
+      "Decision_Threshold": 0.650468062085799,
+      "Train_Time_Sec": 11.069030099999509,
+      "Inference_Latency_ms_per_row": 0.04122576295258585,
       "Confusion_Matrix": [
         [
           955,
@@ -220,10 +220,10 @@
       "Test_F1_Score": 0.7821100917431193,
       "Test_ROC_AUC": 0.9512542302823632,
       "Test_PR_AUC": 0.8840189653620681,
-      "Test_Brier_Score": 0.09312114128776636,
+      "Test_Brier_Score": 0.09312114128827342,
       "Decision_Threshold": 0.5,
-      "Train_Time_Sec": 0.5945113059997311,
-      "Inference_Latency_ms_per_row": 0.0024017430801695854,
+      "Train_Time_Sec": 0.9211923999991996,
+      "Inference_Latency_ms_per_row": 0.004104613200800211,
       "Confusion_Matrix": [
         [
           878,
@@ -241,8 +241,8 @@
         "clf__learning_rate": 0.09,
         "clf__max_depth": 4
       },
-      "CV_ROC_AUC_Mean": 0.9524451313966562,
-      "CV_ROC_AUC_Std": 0.005401492234005015,
+      "CV_ROC_AUC_Mean": 0.9524459392424547,
+      "CV_ROC_AUC_Std": 0.005402158312853323,
       "CV_F1_Mean": 0.7887465468536743,
       "Test_Accuracy": 0.8885734563520227,
       "Test_Precision": 0.7719298245614035,
@@ -251,9 +251,9 @@
       "Test_ROC_AUC": 0.9497261618744994,
       "Test_PR_AUC": 0.884024345401328,
       "Test_Brier_Score": 0.07904777409983076,
-      "Decision_Threshold": 0.438593753595297,
-      "Train_Time_Sec": 41.27387373900001,
-      "Inference_Latency_ms_per_row": 0.009451658623076984,
+      "Decision_Threshold": 0.43859375359529706,
+      "Train_Time_Sec": 99.52346180000131,
+      "Inference_Latency_ms_per_row": 0.017109226401940066,
       "Confusion_Matrix": [
         [
           944,
@@ -282,8 +282,8 @@
       "Test_PR_AUC": 0.8811669110724867,
       "Test_Brier_Score": 0.09719204913060986,
       "Decision_Threshold": 0.5,
-      "Train_Time_Sec": 27.49817171199993,
-      "Inference_Latency_ms_per_row": 0.014263879346547126,
+      "Train_Time_Sec": 67.22007080000003,
+      "Inference_Latency_ms_per_row": 0.035919446416183595,
       "Confusion_Matrix": [
         [
           847,
@@ -312,8 +312,8 @@
       "Test_PR_AUC": 0.8782265677776576,
       "Test_Brier_Score": 0.09778189628691052,
       "Decision_Threshold": 0.5,
-      "Train_Time_Sec": 26.221929833000104,
-      "Inference_Latency_ms_per_row": 0.014194003548310352,
+      "Train_Time_Sec": 36.76582150000104,
+      "Inference_Latency_ms_per_row": 0.03455415188127996,
       "Confusion_Matrix": [
         [
           848,
@@ -342,8 +342,8 @@
       "Test_PR_AUC": 0.8666006379009114,
       "Test_Brier_Score": 0.09583922177625408,
       "Decision_Threshold": 0.7269434690142459,
-      "Train_Time_Sec": 17.865026919999764,
-      "Inference_Latency_ms_per_row": 0.004566017743068694,
+      "Train_Time_Sec": 9.73989520000032,
+      "Inference_Latency_ms_per_row": 0.005415755855711491,
       "Confusion_Matrix": [
         [
           945,
@@ -372,8 +372,8 @@
       "Test_PR_AUC": 0.8542551857054606,
       "Test_Brier_Score": 0.1005130144717679,
       "Decision_Threshold": 0.5,
-      "Train_Time_Sec": 2.1549536019992956,
-      "Inference_Latency_ms_per_row": 0.002604633073681966,
+      "Train_Time_Sec": 2.381407799999579,
+      "Inference_Latency_ms_per_row": 0.002924769339915527,
       "Confusion_Matrix": [
         [
           852,
@@ -552,14 +552,14 @@
     ]
   },
   "artifacts": {
-    "interim_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/interim/cleaned_telco_churn.csv",
-    "train_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/train_engineered.csv",
-    "test_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/test_engineered.csv",
-    "predictions_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/customer_risk_predictions.csv",
-    "model_artifact": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/models_store/churn_ensemble_model.pkl",
+    "interim_csv": "D:\\Telco_Churn_Analytics\\data/interim\\cleaned_telco_churn.csv",
+    "train_csv": "D:\\Telco_Churn_Analytics\\data/processed\\train_engineered.csv",
+    "test_csv": "D:\\Telco_Churn_Analytics\\data/processed\\test_engineered.csv",
+    "predictions_csv": "D:\\Telco_Churn_Analytics\\data/processed\\customer_risk_predictions.csv",
+    "model_artifact": "D:\\Telco_Churn_Analytics\\models_store/churn_ensemble_model.pkl",
     "figures": [
-      "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/reports/figures/churn_eda_and_explainability.png",
-      "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/reports/figures/churn_model_evaluation_dashboard.png"
+      "D:\\Telco_Churn_Analytics\\reports/figures\\churn_eda_and_explainability.png",
+      "D:\\Telco_Churn_Analytics\\reports/figures\\churn_model_evaluation_dashboard.png"
     ]
   }
 }

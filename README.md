@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Skybrisk Telco Churn Analytics (`skybrisk-telco-churn-analytics`)
 
 An end-to-end, production-grade **Customer Churn Prediction and Explainable Retention Analytics** software repository built during the Data Science Internship at [The Skybrisk](https://www.theskybrisk.com/) (Batch: Feb 20 – May 20, 2026) and structured for the **MJCET B.E. (AI & ML) VII Semester** submission.
@@ -231,3 +232,6 @@ docker compose ps
 ## 9. Known Limitations & Future Improvements
 * **Observational Cross-Sectional Scope:** The dataset captures a cross-sectional snapshot of $7,043$ subscribers; incorporating longitudinal monthly billing time-series logs would enable survival analysis (Cox Proportional Hazards) and temporal concept-drift alerts.
 * **Causal Uplift Modeling:** The ROI simulator assumes a uniform $40\%$ save rate among targeted churners; future iterations will integrate treatment/control A/B uplift modeling to estimate individualized treatment effects (ITE).
+=======
+# Telco_Churn_Analytics
+>>>>>>> bbdb50b2607e367f5c9ef51df50059a2e83222df
