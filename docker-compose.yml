@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  churn-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: skybrisk-telco-churn-api
+    ports:
+      - "8080:8080"
+    environment:
+      - CHURN_APP_ENV=production
+      - CHURN_LOG_LEVEL=INFO
+      - CHURN_API_HOST=0.0.0.0
+      - CHURN_API_PORT=8080
+    volumes:
+      - ./data/processed:/app/data/processed
+      - ./reports:/app/reports
+    restart: unless-stopped

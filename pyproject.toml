@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telco-churn-analytics"
+version = "1.0.0"
+description = "End-to-End Customer Churn Prediction and Explainable Retention Analytics Pipeline Using Ensemble Learning and Hyperparameter Optimization"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Mohd Abidullah Shareef", email = "mohdabidullahshareef@gmail.com"}
+]
+dependencies = [
+    "numpy>=1.24.0,<3.0.0",
+    "pandas>=2.0.0,<3.0.0",
+    "scipy>=1.10.0,<2.0.0",
+    "matplotlib>=3.7.0,<4.0.0",
+    "seaborn>=0.12.0,<1.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.unittest]
+start-dir = "tests"
+pattern = "test_*.py"
