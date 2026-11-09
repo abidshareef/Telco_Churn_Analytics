@@ -1,0 +1,565 @@
+{
+  "project_name": "skybrisk-telco-churn-analytics",
+  "version": "1.0.0",
+  "execution_time_sec": 156.69,
+  "raw_data_immutability_verified": true,
+  "raw_data_sha256": "464b6c05f38321d811a826c8da73f24976a963f3de0b4dda653994af3d2b88fd",
+  "validation_report": {
+    "is_valid": true,
+    "n_rows": 7043,
+    "n_columns": 21,
+    "duplicate_customer_ids": 0,
+    "whitespace_total_charges_count": 11,
+    "monthly_charges_iqr_outliers": 0
+  },
+  "cleaning_report": {
+    "n_rows": 7043,
+    "n_whitespace_total_charges_fixed": 11,
+    "n_zero_tenure_imputed_zero": 11,
+    "n_fallback_imputed": 0,
+    "overall_churn_rate": 0.2653698707936959,
+    "churn_counts": {
+      "Retained (0)": 5174,
+      "Churned (1)": 1869
+    }
+  },
+  "statistical_tests": [
+    {
+      "Feature": "tenure",
+      "Type": "Continuous",
+      "Test": "Mann-Whitney U",
+      "Statistic": 7935179.5,
+      "p_value": 0.0,
+      "Effect_Size": 0.6411603847942846,
+      "Retained_Mean": 36.923270197139544,
+      "Churned_Mean": 12.037988228999465,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "Contract",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 1843.8065966570482,
+      "p_value": 0.0,
+      "Effect_Size": 0.5116569032954718,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Type": "Continuous",
+      "Test": "Mann-Whitney U",
+      "Statistic": 2646268.5,
+      "p_value": 1.4262272824476219e-185,
+      "Effect_Size": 0.45269656096261035,
+      "Retained_Mean": 59.44587166602242,
+      "Churned_Mean": 80.97640449438202,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "TotalCharges",
+      "Type": "Continuous",
+      "Test": "Mann-Whitney U",
+      "Statistic": 6939396.0,
+      "p_value": 1.157149168950381e-171,
+      "Effect_Size": 0.4352116180358516,
+      "Retained_Mean": 2335.033909934287,
+      "Churned_Mean": 983.2549170679507,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "InternetService",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 1078.619156437997,
+      "p_value": 6.0370690322098264e-235,
+      "Effect_Size": 0.3913408828111628,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "OnlineSecurity",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 772.2152818537032,
+      "p_value": 2.0681504307609608e-168,
+      "Effect_Size": 0.3311237651856954,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "TechSupport",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 728.9828634486042,
+      "p_value": 5.05105969441052e-159,
+      "Effect_Size": 0.32172130038687025,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "PaymentMethod",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 353.42048316826606,
+      "p_value": 2.7103586483418277e-76,
+      "Effect_Size": 0.2240097977513662,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "PaperlessBilling",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 96.89073508426469,
+      "p_value": 7.32606874702833e-23,
+      "Effect_Size": 0.11729034971895617,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": true
+    },
+    {
+      "Feature": "Dependents",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 9.68225860847064,
+      "p_value": 0.001860557763191877,
+      "Effect_Size": 0.037077419010669806,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": false
+    },
+    {
+      "Feature": "Partner",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 8.0747562826019,
+      "p_value": 0.0044886143880494426,
+      "Effect_Size": 0.0338599152949311,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": false
+    },
+    {
+      "Feature": "SeniorCitizen",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 6.824154433186246,
+      "p_value": 0.008993312393646152,
+      "Effect_Size": 0.031127595847202604,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": false
+    },
+    {
+      "Feature": "gender",
+      "Type": "Categorical",
+      "Test": "Chi-Square",
+      "Statistic": 0.5405486642379704,
+      "p_value": 0.46220543113147694,
+      "Effect_Size": 0.008760694883721163,
+      "Retained_Mean": NaN,
+      "Churned_Mean": NaN,
+      "Significant_at_0.001": false
+    }
+  ],
+  "best_model": "Proposed Hybrid Soft-Voting Ensemble (GBM+RF+LR)",
+  "optimal_threshold": 0.6504680620838822,
+  "model_benchmarks": [
+    {
+      "Model": "Proposed Hybrid Soft-Voting Ensemble (GBM+RF+LR)",
+      "Best_Params": {
+        "weights": [
+          3.2,
+          2.0,
+          1.2,
+          1.2
+        ],
+        "voting": "soft"
+      },
+      "CV_ROC_AUC_Mean": 0.9541279572260205,
+      "CV_ROC_AUC_Std": 0.005790566940254797,
+      "CV_F1_Mean": 0.784410243558895,
+      "Test_Accuracy": 0.8956706884315118,
+      "Test_Precision": 0.7932816537467701,
+      "Test_Recall": 0.820855614973262,
+      "Test_F1_Score": 0.8068331143232589,
+      "Test_ROC_AUC": 0.952036993980728,
+      "Test_PR_AUC": 0.8872050507191911,
+      "Test_Brier_Score": 0.0851210526975777,
+      "Decision_Threshold": 0.6504680620838822,
+      "Train_Time_Sec": 5.6657974199997625,
+      "Inference_Latency_ms_per_row": 0.021801957416502583,
+      "Confusion_Matrix": [
+        [
+          955,
+          80
+        ],
+        [
+          67,
+          307
+        ]
+      ]
+    },
+    {
+      "Model": "Logistic Regression (Tuned L2)",
+      "Best_Params": {
+        "clf__C": 2.5
+      },
+      "CV_ROC_AUC_Mean": 0.9554426671641512,
+      "CV_ROC_AUC_Std": 0.0060216081619696,
+      "CV_F1_Mean": 0.7906380260569429,
+      "Test_Accuracy": 0.865152590489709,
+      "Test_Precision": 0.6847389558232931,
+      "Test_Recall": 0.9117647058823529,
+      "Test_F1_Score": 0.7821100917431193,
+      "Test_ROC_AUC": 0.9512542302823632,
+      "Test_PR_AUC": 0.8840189653620681,
+      "Test_Brier_Score": 0.09312114128776636,
+      "Decision_Threshold": 0.5,
+      "Train_Time_Sec": 0.5945113059997311,
+      "Inference_Latency_ms_per_row": 0.0024017430801695854,
+      "Confusion_Matrix": [
+        [
+          878,
+          157
+        ],
+        [
+          33,
+          341
+        ]
+      ]
+    },
+    {
+      "Model": "Gradient Boosting (Tuned GBM)",
+      "Best_Params": {
+        "clf__learning_rate": 0.09,
+        "clf__max_depth": 4
+      },
+      "CV_ROC_AUC_Mean": 0.9524451313966562,
+      "CV_ROC_AUC_Std": 0.005401492234005015,
+      "CV_F1_Mean": 0.7887465468536743,
+      "Test_Accuracy": 0.8885734563520227,
+      "Test_Precision": 0.7719298245614035,
+      "Test_Recall": 0.8235294117647058,
+      "Test_F1_Score": 0.796895213454075,
+      "Test_ROC_AUC": 0.9497261618744994,
+      "Test_PR_AUC": 0.884024345401328,
+      "Test_Brier_Score": 0.07904777409983076,
+      "Decision_Threshold": 0.438593753595297,
+      "Train_Time_Sec": 41.27387373900001,
+      "Inference_Latency_ms_per_row": 0.009451658623076984,
+      "Confusion_Matrix": [
+        [
+          944,
+          91
+        ],
+        [
+          66,
+          308
+        ]
+      ]
+    },
+    {
+      "Model": "Extra Trees (Randomized Ensemble)",
+      "Best_Params": {
+        "clf__max_depth": 9,
+        "clf__min_samples_leaf": 25
+      },
+      "CV_ROC_AUC_Mean": 0.9504474918693301,
+      "CV_ROC_AUC_Std": 0.006259097614766099,
+      "CV_F1_Mean": 0.7780544660199519,
+      "Test_Accuracy": 0.8452803406671399,
+      "Test_Precision": 0.6466165413533834,
+      "Test_Recall": 0.9197860962566845,
+      "Test_F1_Score": 0.7593818984547461,
+      "Test_ROC_AUC": 0.9473326616549121,
+      "Test_PR_AUC": 0.8811669110724867,
+      "Test_Brier_Score": 0.09719204913060986,
+      "Decision_Threshold": 0.5,
+      "Train_Time_Sec": 27.49817171199993,
+      "Inference_Latency_ms_per_row": 0.014263879346547126,
+      "Confusion_Matrix": [
+        [
+          847,
+          188
+        ],
+        [
+          30,
+          344
+        ]
+      ]
+    },
+    {
+      "Model": "Random Forest (Tuned Ensemble)",
+      "Best_Params": {
+        "clf__max_depth": 8,
+        "clf__min_samples_leaf": 15
+      },
+      "CV_ROC_AUC_Mean": 0.9491932966147392,
+      "CV_ROC_AUC_Std": 0.005487124267271423,
+      "CV_F1_Mean": 0.7801953418368399,
+      "Test_Accuracy": 0.843860894251242,
+      "Test_Precision": 0.6458333333333334,
+      "Test_Recall": 0.9117647058823529,
+      "Test_F1_Score": 0.7560975609756098,
+      "Test_ROC_AUC": 0.9456172983027202,
+      "Test_PR_AUC": 0.8782265677776576,
+      "Test_Brier_Score": 0.09778189628691052,
+      "Decision_Threshold": 0.5,
+      "Train_Time_Sec": 26.221929833000104,
+      "Inference_Latency_ms_per_row": 0.014194003548310352,
+      "Confusion_Matrix": [
+        [
+          848,
+          187
+        ],
+        [
+          33,
+          341
+        ]
+      ]
+    },
+    {
+      "Model": "MLP Neural Network",
+      "Best_Params": {
+        "clf__alpha": 0.05,
+        "clf__learning_rate_init": 0.004
+      },
+      "CV_ROC_AUC_Mean": 0.9392436299014383,
+      "CV_ROC_AUC_Std": 0.006420427701584171,
+      "CV_F1_Mean": 0.76997540594149,
+      "Test_Accuracy": 0.8850248403122782,
+      "Test_Precision": 0.7704081632653061,
+      "Test_Recall": 0.8074866310160428,
+      "Test_F1_Score": 0.7885117493472585,
+      "Test_ROC_AUC": 0.9454777958614276,
+      "Test_PR_AUC": 0.8666006379009114,
+      "Test_Brier_Score": 0.09583922177625408,
+      "Decision_Threshold": 0.7269434690142459,
+      "Train_Time_Sec": 17.865026919999764,
+      "Inference_Latency_ms_per_row": 0.004566017743068694,
+      "Confusion_Matrix": [
+        [
+          945,
+          90
+        ],
+        [
+          72,
+          302
+        ]
+      ]
+    },
+    {
+      "Model": "Decision Tree (CART)",
+      "Best_Params": {
+        "clf__max_depth": 6,
+        "clf__min_samples_leaf": 50
+      },
+      "CV_ROC_AUC_Mean": 0.941171975893725,
+      "CV_ROC_AUC_Std": 0.006232521286800441,
+      "CV_F1_Mean": 0.7689623500841845,
+      "Test_Accuracy": 0.8424414478353442,
+      "Test_Precision": 0.6467181467181468,
+      "Test_Recall": 0.8957219251336899,
+      "Test_F1_Score": 0.7511210762331839,
+      "Test_ROC_AUC": 0.9410460099718412,
+      "Test_PR_AUC": 0.8542551857054606,
+      "Test_Brier_Score": 0.1005130144717679,
+      "Decision_Threshold": 0.5,
+      "Train_Time_Sec": 2.1549536019992956,
+      "Inference_Latency_ms_per_row": 0.002604633073681966,
+      "Confusion_Matrix": [
+        [
+          852,
+          183
+        ],
+        [
+          39,
+          335
+        ]
+      ]
+    }
+  ],
+  "feature_importance": [
+    {
+      "Feature": "Contract",
+      "Importance_Mean": 0.0380492908625902,
+      "Importance_Std": 0.003813184212823106
+    },
+    {
+      "Feature": "MonthlyCharges",
+      "Importance_Mean": 0.033495052830091285,
+      "Importance_Std": 0.002370980352783577
+    },
+    {
+      "Feature": "Contract_Risk_Index",
+      "Importance_Mean": 0.028485881836265547,
+      "Importance_Std": 0.002272197728552745
+    },
+    {
+      "Feature": "TotalCharges",
+      "Importance_Mean": 0.018798728977757206,
+      "Importance_Std": 0.002697348278743888
+    },
+    {
+      "Feature": "tenure",
+      "Importance_Mean": 0.00762355007879314,
+      "Importance_Std": 0.0022970808732879163
+    },
+    {
+      "Feature": "OnlineSecurity",
+      "Importance_Mean": 0.004402335374202449,
+      "Importance_Std": 0.0010753121638883794
+    },
+    {
+      "Feature": "OnlineBackup",
+      "Importance_Mean": 0.002292231780722942,
+      "Importance_Std": 0.0008620111747474587
+    },
+    {
+      "Feature": "Total_Services_Count",
+      "Importance_Mean": 0.0020295021829549453,
+      "Importance_Std": 0.0009094990999099364
+    },
+    {
+      "Feature": "InternetService",
+      "Importance_Mean": 0.0018171484667649286,
+      "Importance_Std": 0.0007877501912376062
+    },
+    {
+      "Feature": "PaymentMethod",
+      "Importance_Mean": 0.0014187914955179348,
+      "Importance_Std": 0.0007744026112400951
+    },
+    {
+      "Feature": "TechSupport",
+      "Importance_Mean": 0.0012061794414736648,
+      "Importance_Std": 0.000771475255872858
+    },
+    {
+      "Feature": "DeviceProtection",
+      "Importance_Mean": 0.0011527035056447365,
+      "Importance_Std": 0.0004855443304671146
+    },
+    {
+      "Feature": "Tenure_Cohort",
+      "Importance_Mean": 0.001149345113539557,
+      "Importance_Std": 0.0004213829348654935
+    },
+    {
+      "Feature": "Security_Support_Count",
+      "Importance_Mean": 0.0009920173603038761,
+      "Importance_Std": 0.0005382151608689492
+    },
+    {
+      "Feature": "Is_Auto_Payment",
+      "Importance_Mean": 0.0007889638068667049,
+      "Importance_Std": 0.0006337898986895397
+    },
+    {
+      "Feature": "SeniorCitizen",
+      "Importance_Mean": 0.0007217959647627725,
+      "Importance_Std": 0.0006157781758361555
+    },
+    {
+      "Feature": "PaperlessBilling",
+      "Importance_Mean": 0.0006104523495828573,
+      "Importance_Std": 0.0002854675371289469
+    },
+    {
+      "Feature": "Partner",
+      "Importance_Mean": 0.0005308842904751642,
+      "Importance_Std": 0.0002519191490397638
+    },
+    {
+      "Feature": "StreamingTV",
+      "Importance_Mean": 0.00045131623136742685,
+      "Importance_Std": 0.00041089047870582034
+    },
+    {
+      "Feature": "Dependents",
+      "Importance_Mean": 0.00038854013278577515,
+      "Importance_Std": 0.00038202430282011443
+    },
+    {
+      "Feature": "MultipleLines",
+      "Importance_Mean": 0.00025110439432700636,
+      "Importance_Std": 0.00024638389634771434
+    },
+    {
+      "Feature": "gender",
+      "Importance_Mean": 0.000152936009713589,
+      "Importance_Std": 0.00032543966997934545
+    },
+    {
+      "Feature": "StreamingMovies",
+      "Importance_Mean": 0.00012606887287206492,
+      "Importance_Std": 0.0004154291185228994
+    },
+    {
+      "Feature": "PhoneService",
+      "Importance_Mean": 0.00012090211578712484,
+      "Importance_Std": 7.426303455304813e-05
+    },
+    {
+      "Feature": "Charge_Spike_Ratio",
+      "Importance_Mean": 7.543465343984312e-05,
+      "Importance_Std": 0.00011705185262198574
+    }
+  ],
+  "retention_roi_simulation": {
+    "Test_Cohort_Size": 1409,
+    "Total_Actual_Churners_in_Test": 374,
+    "Targeted_Subscribers_Med_High_Risk": 536,
+    "True_Churners_Captured_in_Target": 347,
+    "Target_Capture_Recall_Rate": 0.9278074866310161,
+    "Avg_Annual_Revenue_Per_Churner_USD": 987.29,
+    "Estimated_Campaign_Cost_USD": 24120.0,
+    "Gross_Annual_Revenue_Saved_USD": 137036.17,
+    "Net_Annual_Benefit_USD": 112916.17,
+    "Campaign_ROI_Percent": 468.1,
+    "Tier_Breakdown": [
+      {
+        "Risk_Tier": "High Risk (>65%)",
+        "Subscriber_Count": 388,
+        "Actual_Churn_Rate": 0.7912371134020618,
+        "Avg_Churn_Probability": 0.8696961340206185,
+        "Avg_Monthly_Charge": 83.9884793814433,
+        "Total_Annual_Rev_At_Risk": 342680.51
+      },
+      {
+        "Risk_Tier": "Low Risk (<35%)",
+        "Subscriber_Count": 873,
+        "Actual_Churn_Rate": 0.030927835051546393,
+        "Avg_Churn_Probability": 0.05146563573883161,
+        "Avg_Monthly_Charge": 56.37100801832761,
+        "Total_Annual_Rev_At_Risk": 34129.98
+      },
+      {
+        "Risk_Tier": "Medium Risk (35%-65%)",
+        "Subscriber_Count": 148,
+        "Actual_Churn_Rate": 0.2702702702702703,
+        "Avg_Churn_Probability": 0.4992986486486486,
+        "Avg_Monthly_Charge": 72.46655405405404,
+        "Total_Annual_Rev_At_Risk": 64574.8
+      }
+    ]
+  },
+  "artifacts": {
+    "interim_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/interim/cleaned_telco_churn.csv",
+    "train_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/train_engineered.csv",
+    "test_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/test_engineered.csv",
+    "predictions_csv": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/data/processed/customer_risk_predictions.csv",
+    "model_artifact": "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/models_store/churn_ensemble_model.pkl",
+    "figures": [
+      "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/reports/figures/churn_eda_and_explainability.png",
+      "/working_dir/c_1c3100e008e90285/artifacts/file_generation/ttl=63d/output/skybrisk-telco-churn-analytics/reports/figures/churn_model_evaluation_dashboard.png"
+    ]
+  }
+}
